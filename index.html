@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey</title>
+    </head>
+    <body>
+        <form action="https://formspree.io/tigrarion@mail.ru"
+      method="POST">
+            <fieldset>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Name"/><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="email" name="password" placeholder="Enter password for Email" required><br>
+                <label for="passport">Passport:</label>
+                <input type"text" name="passport" id="passport" placeholder="XX123456" pattern="[A-Z]{2}[0-9]{6}"/><br>
+                <input type="radio" name="sex" value="Male"/>Male
+                <input type="radio" name="sex" value="Female"/>Female<br>
+                <label for="date">Select birth date</label><br>
+                <input type="date" name="Birth_Date" id="date"/><br>
+                <select size="3" name="Year_of_graduation" required>
+                    <option disabled>Select year of graduation</option>
+                    <option selected value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                </select><br>
+                <i>Select subjects you want to learn:</i><br>
+                <label for="c1">HTML</label>
+                <input type="checkbox" name="subjects" id="c1" value="HTML">
+                <label for="c2">CSS</label>
+                <input type="checkbox" name="subjects" id="c2" value="CSS">
+                <label for="c3">JavaScript</label>
+                <input type="checkbox" name="subjects" id="c3" value="JavaScript"><br>
+                <label for="tel">Your mobile number in format 0501234567</label><br>
+                <input type="tel" name="tel" id="tel" pattern="[0-9]{10}"><br>
+                <label for="cv"><i>Download CV:</i></label><br>
+                <input type="file" name="CV" id="cv"/><br>
+                <input type="reset" value="reset all"/>
+                <input type="submit" value="Send"/>
+            </fieldset>
+        </form>
+
+    </body>
+</html>
